@@ -1,1 +1,52 @@
 /*  your css code here. If applicable */
+.container{
+	/* width: 100%vw; */
+	/* height: 100%vh */
+	display: grid;
+	/* margin: auto; */
+	/* grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(2, 5px);
+	grid-template-areas: "a b c"
+						   "d e f"; */
+							/* "a b c"
+							"d e f" */
+	gap: 20px;
+}
+#a,#b,#c,#d,#e,#f{
+	border-radius: 10px;
+	width: 400px;
+	onclick: openModal();currentSlide(a);
+}
+h1{
+	text-align: center;
+}
+.column{
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+	
+}
+.row{
+	display: flex;
+	margin: auto;
+	/* justify-content: center; */
+	gap: 20px;
+}
+#a.hover{
+	grid-area: a;
+}
+#b{
+	grid-area: b;
+}
+#c{
+	grid-area: c;
+}
+#d{
+	grid-area: d;
+}
+#e{
+	grid-area: e;
+}
+#f{
+	grid-area: f;
+}
